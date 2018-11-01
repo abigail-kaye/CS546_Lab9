@@ -1,0 +1,18 @@
+<div class="form">
+    <form action="/" method="post" id="static-form">
+        <label for="phrase">Enter phrase</label> <br>
+        <textarea id="phrase" name="phrase" placeholder="Enter text"></textarea> <br>
+        <button type="submit" id="btn">Submit</button>
+    </form>
+</div>
+<div id="error-container" class="hidden"></div>
+<div class="results">
+    <h2>Past Results</h2>
+    <ol id="attempts">
+        {{#if isPalindrome}}
+        <li class="is-palindrome">A</li>
+        {{else}}
+        <li class="not-palindrome">B</li>
+        {{/if}}
+    </ol>
+</div>
